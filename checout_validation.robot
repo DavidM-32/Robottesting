@@ -85,3 +85,18 @@ Vissza navigáció
     Click Element    id:cancel
     Page Should Contain Element   class:title
     Sleep  2s
+
+Érvényes adatokkal sikeres checkout folytatás
+    Login with valid user
+    Click Element    class:inventory_item_name
+    Sleep  2s
+    Click Element    class:shopping_cart_link
+    Click Element    id=checkout
+    Input Text    id:first-name     John
+    Input Text    id:last-name      Doe
+    Input Text    id:postal-code     12345
+    Click Button   id:continue
+    Sleep  2s
+    Click Button  id:finish
+    Page Should Contain Element     class:complete-header
+    Sleep  2s

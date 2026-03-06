@@ -1,91 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-06T10:58:17.099641" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-06T11:02:14.299516" rpa="false" schemaversion="5">
 <suite id="s1" name="Robottesting" source="C:\Users\DavidMarcell\Desktop\unit test\pytest\DM Unit_test_number_validator\Robottesting">
 <suite id="s1-s1" name="Checout Validation" source="C:\Users\DavidMarcell\Desktop\unit test\pytest\DM Unit_test_number_validator\Robottesting\checout_validation.robot">
-<test id="s1-s1-t1" name="Vissza navigáció" line="79">
+<test id="s1-s1-t1" name="Érvényes adatokkal sikeres checkout folytatás" line="89">
 <kw name="Login with valid user" owner="Login_keyword">
 <kw name="Open Browser" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:17.274532" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2026-03-06T11:02:14.475739" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
 <arg>https://www.saucedemo.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-06T10:58:17.274290" elapsed="1.045963"/>
+<status status="PASS" start="2026-03-06T11:02:14.475499" elapsed="0.844798"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:18.320804" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2026-03-06T11:02:15.320926" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:18.320466" elapsed="0.069821"/>
+<status status="PASS" start="2026-03-06T11:02:15.320521" elapsed="0.070259"/>
 </kw>
 <kw name="Input Text" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:18.390742" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg time="2026-03-06T11:02:15.391220" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
 <arg>id:password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:18.390484" elapsed="0.050471"/>
+<status status="PASS" start="2026-03-06T11:02:15.390970" elapsed="0.045146"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-06T10:58:20.441653" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-03-06T11:02:17.436932" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-06T10:58:18.441132" elapsed="2.000849"/>
+<status status="PASS" start="2026-03-06T11:02:15.436289" elapsed="2.000906"/>
 </kw>
 <kw name="Click Button" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:20.442388" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2026-03-06T11:02:17.437660" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:20.442146" elapsed="0.067222"/>
+<status status="PASS" start="2026-03-06T11:02:17.437360" elapsed="0.062771"/>
 </kw>
-<status status="PASS" start="2026-03-06T10:58:17.273666" elapsed="3.235847"/>
+<status status="PASS" start="2026-03-06T11:02:14.474885" elapsed="3.025403"/>
 </kw>
 <kw name="Click Element" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:20.510031" level="INFO">Clicking element 'class:inventory_item_name'.</msg>
+<msg time="2026-03-06T11:02:17.500753" level="INFO">Clicking element 'class:inventory_item_name'.</msg>
 <arg>class:inventory_item_name</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:20.509766" elapsed="0.049364"/>
+<status status="PASS" start="2026-03-06T11:02:17.500510" elapsed="0.042212"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-06T10:58:21.560446" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-06T10:58:20.559485" elapsed="1.002141"/>
-</kw>
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:21.563679" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
-<arg>class:shopping_cart_link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:21.563094" elapsed="0.043390"/>
-</kw>
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:21.606998" level="INFO">Clicking element 'id=checkout'.</msg>
-<arg>id=checkout</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:21.606740" elapsed="0.032503"/>
-</kw>
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:21.639733" level="INFO">Clicking element 'id:cancel'.</msg>
-<arg>id:cancel</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-06T10:58:21.639497" elapsed="0.035964"/>
-</kw>
-<kw name="Page Should Contain Element" owner="Selenium2Library">
-<msg time="2026-03-06T10:58:21.690946" level="INFO">Current page contains element 'class:title'.</msg>
-<arg>class:title</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2026-03-06T10:58:21.675721" elapsed="0.015411"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-06T10:58:23.692503" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-03-06T11:02:19.544632" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-06T10:58:21.691408" elapsed="2.002189"/>
+<status status="PASS" start="2026-03-06T11:02:17.543008" elapsed="2.003087"/>
 </kw>
-<status status="PASS" start="2026-03-06T10:58:17.271676" elapsed="6.423610"/>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.549925" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
+<arg>class:shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.548256" elapsed="0.042569"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.591400" level="INFO">Clicking element 'id=checkout'.</msg>
+<arg>id=checkout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.591126" elapsed="0.033811"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.625515" level="INFO">Typing text 'John' into text field 'id:first-name'.</msg>
+<arg>id:first-name</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.625250" elapsed="0.042258"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.668046" level="INFO">Typing text 'Doe' into text field 'id:last-name'.</msg>
+<arg>id:last-name</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.667792" elapsed="0.036632"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.704921" level="INFO">Typing text '12345' into text field 'id:postal-code'.</msg>
+<arg>id:postal-code</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.704677" elapsed="0.038498"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:19.743687" level="INFO">Clicking button 'id:continue'.</msg>
+<arg>id:continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.743431" elapsed="0.041366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-06T11:02:21.786334" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-06T11:02:19.785163" elapsed="2.002163"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:21.789859" level="INFO">Clicking button 'id:finish'.</msg>
+<arg>id:finish</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-06T11:02:21.788741" elapsed="0.046011"/>
+</kw>
+<kw name="Page Should Contain Element" owner="Selenium2Library">
+<msg time="2026-03-06T11:02:21.841418" level="INFO">Current page contains element 'class:complete-header'.</msg>
+<arg>class:complete-header</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-03-06T11:02:21.835091" elapsed="0.006522"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-06T11:02:23.842431" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-06T11:02:21.841929" elapsed="2.001226"/>
+</kw>
+<status status="PASS" start="2026-03-06T11:02:14.472889" elapsed="9.371361"/>
 </test>
-<status status="PASS" start="2026-03-06T10:58:17.129307" elapsed="6.577663"/>
+<status status="PASS" start="2026-03-06T11:02:14.329191" elapsed="9.525186"/>
 </suite>
-<status status="PASS" start="2026-03-06T10:58:17.103298" elapsed="6.607663"/>
+<status status="PASS" start="2026-03-06T11:02:14.302831" elapsed="9.556580"/>
 </suite>
 <statistics>
 <total>
